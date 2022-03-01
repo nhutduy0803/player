@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playe Music</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <div class="nguyennutduy">
+      <i class="far fa-hand-point-right"></i> Made by
+      <a href="https://www.facebook.com/profile.php?id=100051162171790"
+        >Nguyễn Nhựt Duy</a
+      >
+    </div>
+    <div class="iphone">
+      <div class="camera-iphone"></div>
+      <div class="music">Music <i class="fas fa-music"></i></div>
+      <div id="track-img">
+        <p id="volume_show">90</p>
+        <p>/</p>
+        <p id="volume_icon"><i class="fas fa-volume-up"></i></p>
+        <input
+          id="volume"
+          min="0"
+          max="100"
+          value="90"
+          type="range"
+          onchange="volume_change()"
+        />
+      </div>
+      <div class="show_song_no">
+        <p id="present">1</p>
+        <p>/</p>
+        <p id="total">5</p>
+      </div>
+      <div class="img-cd">
+        <img id="track-image" alt="" />
+      </div>
+      <p id="tittle">Title.mp3</p>
+      <p id="artist">Arist Name</p>
+      <div class="midle">
+        <button onclick="previous_song()" id="pre">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button onclick="justplay()" id="play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button onclick="next_song()" id="next">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+      <div class="duration">
+        <input
+          id="duration_slider"
+          onchange="change_duration()"
+          value="0"
+          max="100"
+          min="0"
+          type="range"
+        />
+      </div>
+      <button id="auto" onclick="autoplay_switch()">
+        Auto play <i class="fa fa-circle-o-notch"></i>
+      </button>
+    </div>
+    <script src="./index.js"></script>
+    <audio
+      src="./assets/mp3/TOULIVER x BINZ - _BIGCITYBOI_ (Official Music Video).mp3"
+    ></audio>
+  </body>
+</html>
