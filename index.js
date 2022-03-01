@@ -16,7 +16,6 @@ let artist = document.querySelector("#artist");
 
 let timer;
 let autoplay = 0;
-
 let index_no = 0;
 let Playing_song = false;
 
