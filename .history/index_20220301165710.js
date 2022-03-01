@@ -18,6 +18,7 @@ let timer;
 let autoplay = 0;
 let index_no = 0;
 let Playing_song = false;
+
 //create  audio Element
 let track = document.createElement("audio");
 
