@@ -30,7 +30,6 @@ let All_song = [
     img: "./assets/img/cưa là đổ.jpg",
     singer: "Phát Hồ",
   },
-
   {
     name: "Biết Tìm Đâu",
     path: "./assets/mp3/_từng ngày dài còn lại một mình nơi đây..._ _ biết tìm đâu (𝙨𝙡𝙤𝙬𝙚𝙙 + 𝙧𝙚𝙫𝙚𝙧𝙗).mp3",
