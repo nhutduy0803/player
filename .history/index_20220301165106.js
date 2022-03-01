@@ -25,17 +25,16 @@ let track = document.createElement("audio");
 //All songs list
 let All_song = [
   {
-    name: "Cưa Là Đổ",
-    path: "./assets/mp3/CƯA LÀ ĐỔ - PHÁT HỒ X2X _ OFFICIAL MUSIC VIDEO LYRICS.mp3",
-    img: "./assets/img/cưa là đổ.jpg",
-    singer: "Phát Hồ",
-  },
-
-  {
     name: "Biết Tìm Đâu",
     path: "./assets/mp3/_từng ngày dài còn lại một mình nơi đây..._ _ biết tìm đâu (𝙨𝙡𝙤𝙬𝙚𝙙 + 𝙧𝙚𝙫𝙚𝙧𝙗).mp3",
     img: "./assets/img/biết tìm đâu.jpg",
     singer: "Tuấn Hưng",
+  },
+  {
+    name: "Cưa Là Đổ",
+    path: "./assets/mp3/CƯA LÀ ĐỔ - PHÁT HỒ X2X _ OFFICIAL MUSIC VIDEO LYRICS.mp3",
+    img: "./assets/img/cưa là đổ.jpg",
+    singer: "Phát Hồ",
   },
 
   {
