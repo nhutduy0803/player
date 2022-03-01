@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#dfb4c8, #bdabe7);
+}
+
+.nguyennutduy {
+  color: #000;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nguyennutduy .fa-hand-point-right {
+  margin-right: 10px;
+}
+
+.nguyennutduy a {
+  font-style: italic;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.iphone {
+  position: relative;
+  width: 255px;
+  border: 10px solid #000;
+  height: 500px;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: 0px 10px 25px rgb(51 51 51 / 30%);
+  border-bottom: 12px solid #000;
+  background-color: #0b0c20ec;
+}
+
+.iphone::before {
+  position: absolute;
+  content: " ";
+  background-color: #ccc;
+  height: 3.5px;
+  width: 90px;
+  bottom: 7px;
+  border-radius: 5px;
+  transform: translate(-50%);
+  left: 50%;
+  transition: 0.3s;
+}
+
+.iphone:hover::before {
+  position: absolute;
+  transition: 0.3s;
+  bottom: 9px;
+}
+
+.iphone::after {
+  position: absolute;
+  content: " ";
+  background-color: #222;
+  height: 3px;
+  width: 50px;
+  top: 7px;
+  border-radius: 5px;
+  left: 100px;
+}
+
+.camera-iphone {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 20px;
+  background-color: #000;
+  transform: translate(-50%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#track-image {
+  position: absolute;
+  top: 70px;
+  height: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  width: 120px;
+  overflow: hidden;
+  box-shadow: 0px 0 5px #737373;
+  /* margin-left: -60px; */
+}
+
+#track-image.hihi {
+  animation: animate 20s linear infinite;
+  margin-left: -60px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#tittle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 250px;
+  color: #fff;
+  font-size: 25px;
+}
+
+#artist {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 230px;
+  color: #737373;
+}
+
+p#artist {
+  font-size: 15px;
+}
+
+p#tittle {
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.music {
+  margin-top: 17px;
+  margin-left: 10px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-style: italic;
+}
+
+#track-img input {
+  appearance: none;
+  position: absolute;
+  bottom: 58px;
+  left: 74.5%;
+  transform: translate(-50%);
+  width: 65px;
+  height: 2px;
+}
+
+#track-img input::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #5db996;
+}
+
+#volume_show {
+  position: absolute;
+  bottom: 50px;
+  font-size: 11px;
+  padding: 2px;
+  color: #fff;
+  right: 95px;
+}
+
+#volume_icon {
+  position: absolute;
+  bottom: 49.5px;
+  font-size: 11px;
+  padding: 2px;
+  color: #fff;
+  right: 8px;
+}
+
+.show_song_no {
+  top: 12px;
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+}
+
+.show_song_no p {
+  font-size: 13px;
+  color: #ccc;
+  display: inline-block;
+}
+
+.duration {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 300px;
+}
+
+.duration input {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 2px;
+}
+
+.duration input::-webkit-slider-thumb {
+  width: 15px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  height: 15px;
+  background-color: #5db996;
+}
+
+.midle {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.midle button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#play .fas {
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px 10px 10px 11px;
+  border: 1.5px solid #ccc;
+}
+
+#pre .fas,
+#next .fas {
+  font-size: 18px;
+}
+
+.midle .fas {
+  margin: 0 20px;
+  color: #5db996;
+}
+
+.midle .fas:nth-child(1):hover,
+.fas:nth-child(3):hover {
+  opacity: 0.8;
+}
+
+#play .fas {
+  border-radius: 50%;
+  border: 1.5px solid #ccc;
+  padding: 10px 10px 10px 12px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#play .fas:hover {
+  background-color: #ccc;
+  transition: 0.5s;
+}
+
+#auto {
+  width: 100px;
+  height: 20px;
+  border: 1.5px solid rgb(255, 255, 255);
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: 500;
+  background-color: #5db996;
+}
+
+#auto .fas {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+#auto:hover {
+  background-color: #5db996;
+  transition: 0.5s;
+  color: #fff;
+}
